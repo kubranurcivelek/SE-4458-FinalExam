@@ -2008,6 +2008,8 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "HotelBooking.Data": "1.0.0",
+          "HotelBooking.Services": "1.0.0",
+          "MySql.EntityFrameworkCore": "8.0.2",
           "Quartz": "3.9.0",
           "Quartz.Extensions.Hosting": "3.9.0",
           "RabbitMQ.Client": "6.8.1"
@@ -2024,7 +2026,6 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "HotelBooking.Data": "1.0.0",
-          "HotelBooking.ScheduledTasks": "1.0.0",
           "MySql.EntityFrameworkCore": "8.0.2"
         },
         "compile": {

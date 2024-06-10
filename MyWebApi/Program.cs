@@ -3,10 +3,10 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using System.Text.Json.Serialization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
-using WebAPI.Data;
 using WebAPI.Services;
 using HotelBooking.ScheduledTasks.Interfaces;
 using HotelBooking.ScheduledTasks.Services;
+using HotelBooking.Services.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 

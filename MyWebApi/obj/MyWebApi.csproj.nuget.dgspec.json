@@ -100,6 +100,9 @@
             "projectReferences": {
               "C:\\GitHub\\SE-4458-FinalExam\\HotelBooking.Data\\HotelBooking.Data.csproj": {
                 "projectPath": "C:\\GitHub\\SE-4458-FinalExam\\HotelBooking.Data\\HotelBooking.Data.csproj"
+              },
+              "C:\\GitHub\\SE-4458-FinalExam\\HotelBooking.Services\\HotelBooking.Services.csproj": {
+                "projectPath": "C:\\GitHub\\SE-4458-FinalExam\\HotelBooking.Services\\HotelBooking.Services.csproj"
               }
             }
           }
@@ -119,6 +122,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
             "Quartz": {
               "target": "Package",
               "version": "[3.9.0, )"
@@ -183,9 +190,6 @@
             "projectReferences": {
               "C:\\GitHub\\SE-4458-FinalExam\\HotelBooking.Data\\HotelBooking.Data.csproj": {
                 "projectPath": "C:\\GitHub\\SE-4458-FinalExam\\HotelBooking.Data\\HotelBooking.Data.csproj"
-              },
-              "C:\\GitHub\\SE-4458-FinalExam\\HotelBooking.ScheduledTasks\\HotelBooking.ScheduledTasks.csproj": {
-                "projectPath": "C:\\GitHub\\SE-4458-FinalExam\\HotelBooking.ScheduledTasks\\HotelBooking.ScheduledTasks.csproj"
               }
             }
           }

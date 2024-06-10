@@ -4,9 +4,9 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
-using WebAPI.Data;
 using WebAPI.Models;
 using HotelBooking.ScheduledTasks.Interfaces;
+using HotelBooking.Services.Data;
 
 namespace HotelBooking.ScheduledTasks
 {
@@ -14,20 +14,20 @@ namespace HotelBooking.ScheduledTasks
     {
         private readonly IServiceProvider _serviceProvider;
         private readonly IQueueService _queueService;
-        private readonly IEmailService _emailService;
+        //private readonly IEmailService _emailService;
 
-        public NotificationService(IServiceProvider serviceProvider, IQueueService queueService, IEmailService emailService)
+        public NotificationService(IServiceProvider serviceProvider, IQueueService queueService)
         {
             _serviceProvider = serviceProvider;
             _queueService = queueService;
-            _emailService = emailService;
+            //_emailService = emailService;
         }
 
         public async Task NotifyLowCapacity()
         {
             using (var scope = _serviceProvider.CreateScope())
             {
-                var context = scope.ServiceProvider.GetRequiredService<Ap>();
+                var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
                 var oneMonthFromNow = DateTime.Now.AddMonths(1);
                 var hotels = await context.Hotels
                     .Include(h => h.Rooms)
@@ -44,7 +44,7 @@ namespace HotelBooking.ScheduledTasks
                     {
                         // Notify all admins
                         var admins = await context.Users
-                            .Where(u => u.Role == UserRole.Admin)
+                            .Where(u => u.CustomRole == UserRole.Admin)
                             .ToListAsync();
 
                         foreach (var admin in admins)
@@ -72,7 +72,7 @@ namespace HotelBooking.ScheduledTasks
                         var body = $"Dear {user.Username},<br/><br/>" +
                                    $"Your reservation for room {room.Type} from {message.StartDate:dd MMM yyyy} to {message.EndDate:dd MMM yyyy} has been confirmed.<br/><br/>" +
                                    "Thank you for choosing our service!";
-                        _emailService.Send(user.Email, "Reservation Confirmation", body);
+                        //_emailService.Send(user.Email, "Reservation Confirmation", body);
                     }
                 }
             });
@@ -80,7 +80,7 @@ namespace HotelBooking.ScheduledTasks
 
         private void SendEmailNotification(string email, string hotelName)
         {
-            _emailService.Send(email, "Low Capacity Alert", $"The capacity for hotel {hotelName} is below 20%");
+            //_emailService.Send(email, "Low Capacity Alert", $"The capacity for hotel {hotelName} is below 20%");
         }
     }
 }

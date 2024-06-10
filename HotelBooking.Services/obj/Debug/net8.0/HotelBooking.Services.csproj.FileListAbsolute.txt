@@ -1,0 +1,16 @@
+C:\GitHub\SE-4458-FinalExam\HotelBooking.Services\bin\Debug\net8.0\HotelBooking.Services.deps.json
+C:\GitHub\SE-4458-FinalExam\HotelBooking.Services\bin\Debug\net8.0\HotelBooking.Services.dll
+C:\GitHub\SE-4458-FinalExam\HotelBooking.Services\bin\Debug\net8.0\HotelBooking.Services.pdb
+C:\GitHub\SE-4458-FinalExam\HotelBooking.Services\bin\Debug\net8.0\HotelBooking.Data.dll
+C:\GitHub\SE-4458-FinalExam\HotelBooking.Services\bin\Debug\net8.0\HotelBooking.Data.pdb
+C:\GitHub\SE-4458-FinalExam\HotelBooking.Services\obj\Debug\net8.0\HotelBooking.Services.csproj.AssemblyReference.cache
+C:\GitHub\SE-4458-FinalExam\HotelBooking.Services\obj\Debug\net8.0\HotelBooking.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitHub\SE-4458-FinalExam\HotelBooking.Services\obj\Debug\net8.0\HotelBooking.Services.AssemblyInfoInputs.cache
+C:\GitHub\SE-4458-FinalExam\HotelBooking.Services\obj\Debug\net8.0\HotelBooking.Services.AssemblyInfo.cs
+C:\GitHub\SE-4458-FinalExam\HotelBooking.Services\obj\Debug\net8.0\HotelBooking.Services.csproj.CoreCompileInputs.cache
+C:\GitHub\SE-4458-FinalExam\HotelBooking.Services\obj\Debug\net8.0\HotelBooking.Services.sourcelink.json
+C:\GitHub\SE-4458-FinalExam\HotelBooking.Services\obj\Debug\net8.0\HotelBoo.9D15BAAF.Up2Date
+C:\GitHub\SE-4458-FinalExam\HotelBooking.Services\obj\Debug\net8.0\HotelBooking.Services.dll
+C:\GitHub\SE-4458-FinalExam\HotelBooking.Services\obj\Debug\net8.0\refint\HotelBooking.Services.dll
+C:\GitHub\SE-4458-FinalExam\HotelBooking.Services\obj\Debug\net8.0\HotelBooking.Services.pdb
+C:\GitHub\SE-4458-FinalExam\HotelBooking.Services\obj\Debug\net8.0\ref\HotelBooking.Services.dll

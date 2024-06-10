@@ -13,8 +13,5 @@
   <ItemGroup>
     <PackageReference Include="MySql.EntityFrameworkCore" Version="8.0.2" />
   </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\HotelBooking.ScheduledTasks\HotelBooking.ScheduledTasks.csproj" />
-  </ItemGroup>
+  
 </Project>

@@ -5,9 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using WebAPI.Models;
 using MyWebApi.DTOs;
-using WebAPI.Data;
-using HotelBooking.ScheduledTasks.Interfaces;
-using HotelBooking.ScheduledTasks.DTOs;
+using HotelBooking.Services.Data;
 
 namespace WebAPI.Services
 {
@@ -24,11 +22,9 @@ namespace WebAPI.Services
     public class BookingService : IBookingService
     {
         private readonly AppDbContext _context;
-        private readonly IQueueService _queueService;
 
-        public BookingService(AppDbContext context, IQueueService queueService)
+        public BookingService(AppDbContext context)
         {
-            _queueService = queueService;
             _context = context;
         }
 
@@ -85,15 +81,6 @@ namespace WebAPI.Services
             _context.Entry(booking).State = EntityState.Modified;
             await _context.SaveChangesAsync();
 
-            var message = new ReservationMessage
-            {
-                UserId = bookingDto.UserId,
-                RoomId = bookingDto.RoomId,
-                StartDate = bookingDto.StartDate,
-                EndDate = bookingDto.EndDate
-            };
-
-            _queueService.SendReservationMessage(message);
             return booking;
         }
 

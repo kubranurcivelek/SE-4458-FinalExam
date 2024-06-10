@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HotelBooking.ScheduledTasks")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e25dda3f449f7094c4cb5e9d333a4d6ebe76b2a0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cdd8b06d7fdadc7fdccff49c55fac8f75f735ca4")]
 [assembly: System.Reflection.AssemblyProductAttribute("HotelBooking.ScheduledTasks")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HotelBooking.ScheduledTasks")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

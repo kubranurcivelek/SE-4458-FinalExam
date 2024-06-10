@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using WebAPI.Models;
 
-namespace WebAPI.Data
+namespace HotelBooking.Services.Data
 {
     public class AppDbContext : DbContext
     {

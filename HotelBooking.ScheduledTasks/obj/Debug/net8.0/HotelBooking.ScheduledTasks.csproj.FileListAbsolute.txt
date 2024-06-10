@@ -1,0 +1,6 @@
+C:\GitHub\SE-4458-FinalExam\HotelBooking.ScheduledTasks\obj\Debug\net8.0\HotelBooking.ScheduledTasks.csproj.AssemblyReference.cache
+C:\GitHub\SE-4458-FinalExam\HotelBooking.ScheduledTasks\obj\Debug\net8.0\HotelBooking.ScheduledTasks.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitHub\SE-4458-FinalExam\HotelBooking.ScheduledTasks\obj\Debug\net8.0\HotelBooking.ScheduledTasks.AssemblyInfoInputs.cache
+C:\GitHub\SE-4458-FinalExam\HotelBooking.ScheduledTasks\obj\Debug\net8.0\HotelBooking.ScheduledTasks.AssemblyInfo.cs
+C:\GitHub\SE-4458-FinalExam\HotelBooking.ScheduledTasks\obj\Debug\net8.0\HotelBooking.ScheduledTasks.csproj.CoreCompileInputs.cache
+C:\GitHub\SE-4458-FinalExam\HotelBooking.ScheduledTasks\obj\Debug\net8.0\HotelBooking.ScheduledTasks.sourcelink.json

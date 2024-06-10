@@ -1,0 +1,12 @@
+C:\GitHub\SE-4458-FinalExam\HotelBooking.Data\bin\Debug\net8.0\HotelBooking.Data.deps.json
+C:\GitHub\SE-4458-FinalExam\HotelBooking.Data\bin\Debug\net8.0\HotelBooking.Data.dll
+C:\GitHub\SE-4458-FinalExam\HotelBooking.Data\bin\Debug\net8.0\HotelBooking.Data.pdb
+C:\GitHub\SE-4458-FinalExam\HotelBooking.Data\obj\Debug\net8.0\HotelBooking.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitHub\SE-4458-FinalExam\HotelBooking.Data\obj\Debug\net8.0\HotelBooking.Data.AssemblyInfoInputs.cache
+C:\GitHub\SE-4458-FinalExam\HotelBooking.Data\obj\Debug\net8.0\HotelBooking.Data.AssemblyInfo.cs
+C:\GitHub\SE-4458-FinalExam\HotelBooking.Data\obj\Debug\net8.0\HotelBooking.Data.csproj.CoreCompileInputs.cache
+C:\GitHub\SE-4458-FinalExam\HotelBooking.Data\obj\Debug\net8.0\HotelBooking.Data.sourcelink.json
+C:\GitHub\SE-4458-FinalExam\HotelBooking.Data\obj\Debug\net8.0\HotelBooking.Data.dll
+C:\GitHub\SE-4458-FinalExam\HotelBooking.Data\obj\Debug\net8.0\refint\HotelBooking.Data.dll
+C:\GitHub\SE-4458-FinalExam\HotelBooking.Data\obj\Debug\net8.0\HotelBooking.Data.pdb
+C:\GitHub\SE-4458-FinalExam\HotelBooking.Data\obj\Debug\net8.0\ref\HotelBooking.Data.dll
