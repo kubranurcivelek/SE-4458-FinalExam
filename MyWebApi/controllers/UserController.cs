@@ -48,7 +48,7 @@ namespace WebAPI.Controllers
                 Username = request.Username,
                 Email = request.Email,
                 Password = request.Password,
-                Role = request.Role
+                CustomRole = request.Role
             };
 
             try
@@ -70,8 +70,8 @@ namespace WebAPI.Controllers
             {
                 Subject = new ClaimsIdentity(new[]
                 {
-                    new Claim(ClaimTypes.Name, user.Username),
-                    new Claim(ClaimTypes.Role, user.Role.ToString())
+                    new Claim("Id", user.Id.ToString()),
+                    new Claim("CustomRole", user.CustomRole.ToString())
                 }),
                 Expires = DateTime.UtcNow.AddHours(1),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)

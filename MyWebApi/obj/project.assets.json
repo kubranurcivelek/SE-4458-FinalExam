@@ -2007,6 +2007,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "HotelBooking.Data": "1.0.0",
           "Quartz": "3.9.0",
           "Quartz.Extensions.Hosting": "3.9.0",
           "RabbitMQ.Client": "6.8.1"
@@ -2016,6 +2017,21 @@
         },
         "runtime": {
           "bin/placeholder/HotelBooking.ScheduledTasks.dll": {}
+        }
+      },
+      "HotelBooking.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "HotelBooking.Data": "1.0.0",
+          "HotelBooking.ScheduledTasks": "1.0.0",
+          "MySql.EntityFrameworkCore": "8.0.2"
+        },
+        "compile": {
+          "bin/placeholder/HotelBooking.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HotelBooking.Services.dll": {}
         }
       }
     }
@@ -5627,12 +5643,18 @@
       "type": "project",
       "path": "../HotelBooking.ScheduledTasks/HotelBooking.ScheduledTasks.csproj",
       "msbuildProject": "../HotelBooking.ScheduledTasks/HotelBooking.ScheduledTasks.csproj"
+    },
+    "HotelBooking.Services/1.0.0": {
+      "type": "project",
+      "path": "../HotelBooking.Services/HotelBooking.Services.csproj",
+      "msbuildProject": "../HotelBooking.Services/HotelBooking.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "HotelBooking.Data >= 1.0.0",
       "HotelBooking.ScheduledTasks >= 1.0.0",
+      "HotelBooking.Services >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 8.0.6",
       "Microsoft.AspNetCore.OpenApi >= 8.0.5",
       "Microsoft.EntityFrameworkCore >= 8.0.6",
@@ -5682,6 +5704,9 @@
             },
             "C:\\GitHub\\SE-4458-FinalExam\\HotelBooking.ScheduledTasks\\HotelBooking.ScheduledTasks.csproj": {
               "projectPath": "C:\\GitHub\\SE-4458-FinalExam\\HotelBooking.ScheduledTasks\\HotelBooking.ScheduledTasks.csproj"
+            },
+            "C:\\GitHub\\SE-4458-FinalExam\\HotelBooking.Services\\HotelBooking.Services.csproj": {
+              "projectPath": "C:\\GitHub\\SE-4458-FinalExam\\HotelBooking.Services\\HotelBooking.Services.csproj"
             }
           }
         }
