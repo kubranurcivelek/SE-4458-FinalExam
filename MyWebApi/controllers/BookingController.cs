@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using MyWebApi.DTOs;
 using WebAPI.Models;
 using WebAPI.Services;
 
@@ -37,21 +38,28 @@ namespace WebAPI.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<Booking>> PostBooking(Booking booking)
+        public async Task<ActionResult<Booking>> PostBooking(BookingCreateDto bookingDto)
         {
-            await _bookingService.CreateBookingAsync(booking);
-            return CreatedAtAction(nameof(GetBooking), new { id = booking.Id }, booking);
+            try
+            {
+                var booking = await _bookingService.CreateBookingAsync(bookingDto);
+                return CreatedAtAction(nameof(GetBooking), new { id = booking.Id }, booking);
+            }
+            catch (InvalidOperationException ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutBooking(int id, Booking booking)
+        public async Task<IActionResult> PutBooking(int id, BookingCreateDto bookingDto)
         {
-            if (id != booking.Id)
+            var booking = await _bookingService.UpdateBookingAsync(id, bookingDto);
+            if (booking == null)
             {
-                return BadRequest();
+                return NotFound();
             }
 
-            await _bookingService.UpdateBookingAsync(id, booking);
             return NoContent();
         }
 
